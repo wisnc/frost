@@ -35,21 +35,37 @@ a reader owns the SD card and fills two buffers. Audio and video decode only fro
 Arrow keys: `;` up, `.` down, `,` left, `/` right.
 
 `Space` Pause / resume
+
 `0`–`9` Jump to 0%–90%
+
 `Fn`+`←` / `→` Seek −/+ 2%
+
 `]` / `[` Next / previous video
+
 `=` / `-` Volume (with `Fn`: brightness)
+
 `s` Stop
+
 `m` Mute
+
 `r` Repeat current video
+
 `\` Shuffle
+
 `v` Video off / on (audio keeps playing)
+
 `h` Half frame rate
+
 `i` Title and position
+
 `d` Debug overlay
+
 `n` / `b` Next / previous frame (while paused)
+
 `Fn`+`[` / `]` Audio sync −/+ 20 ms
+
 `Fn`+`S` Scan titles
+
 `←` Fullscreen: back to browser, keeps playing
 
 In the browser: `↑` `↓` move, `→` open or play (also queues all videos in the directory) , `←` parent folder, `Enter` go back to the player/video, `'` add to queue, `Fn`+`'` play next.
