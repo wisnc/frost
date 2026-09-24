@@ -8,9 +8,10 @@ A video player for the M5Stack Cardputer ADV. Plays `.avi` files (MJPEG video + 
 
 ## Quick start
 
-1. Put `frost-convert.py` in a folder with your `.mp4` / `.mkv` files and run it (requires `ffmpeg`).
-2. Copy the `.avi` files from `frost-out/` to `/Movie` on the SD card.
-3. Boot frost, press `Fn`+`S` to scan titles, pick a video.
+1. put `frost-convert.py` in a folder with your `.mp4` / `.mkv` files and run it (requires `ffmpeg`).
+2. copy the `.avi` files from `frost-out/` to `/Movie` on the SD card.
+3. Boot frost. on first boot it generates /.frost/config file. see Settings
+4. boot frost again and by now you can select a video.
 
 converter defaults: 20 fps, quality 6, 8 KB frame cap.
 
@@ -28,7 +29,7 @@ flowchart LR
   A -. audio clock .-> V
 ```
 
-a reader owns the SD card and fills two buffers. Audio and video decode only from RAM. Video frames are timed against the audio; late frames are skipped. Audio decode takes the highest priority (personally audio stutters are way more unbearable)
+a reader task owns the SD card and fills two buffers. Audio and video decode only from RAM. Video frames are timed against the audio, frames that come late gets skipped causing video stutters. Audio decode takes the highest priority (personally audio stutters are way more unbearable)
 
 ## Controls
 
