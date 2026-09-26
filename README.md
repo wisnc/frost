@@ -71,6 +71,8 @@ Arrow keys: `;` up, `.` down, `,` left, `/` right.
 
 In the browser: `↑` `↓` move, `→` open or play (also queues all videos in the directory) , `←` parent folder, `Enter` go back to the player/video, `'` add to queue, `Fn`+`'` play next.
 
+`G0` toggle display
+
 ## Settings
 
 Edit `/.frost/config` on the SD card. Delete it to restore defaults.
